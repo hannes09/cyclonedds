@@ -46,7 +46,7 @@ if(ENABLE_SECURITY)
 endif()
 
 if(iceoryx_binding_c_FOUND)
-  target_link_libraries(ddsc PRIVATE iceoryx_binding_c::iceoryx_binding_c)
+  target_link_libraries(ddsc PUBLIC iceoryx_binding_c::iceoryx_binding_c)
 endif()
 
 include(ddsi/CMakeLists.txt)
